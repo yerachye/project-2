@@ -1,0 +1,158 @@
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+
+}
+
+.list1 .box-item{
+    flex: 1 1 1 160px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    width: 20px;
+    height: 80px;
+    border: hsl(0, 0%, 0%);;
+    margin-left: 60px;
+    margin-right: 30px;
+    margin-top: 200px;
+}
+.img{
+    width: 400px;
+    height: 350px;
+    border-radius: 15px;
+  }
+
+  .about img {
+    width: 35rem;
+    border-radius: 10px;
+}
+
+.about h1 {
+    line-height: 1.3; /* высота линии */
+    letter-spacing: 1.2rem; /* пространсство между буквами */
+}
+
+.about {
+    margin-top: 100px;
+}
+
+.banner {
+    margin-top: 200px;
+    background-repeat: no-repeat; /* чтобы не повторяться картинка */
+    background-size: cover; /* растягивает на всю ширину броузера */
+    background-position: left; /* закрепить в левый чвсть  чтобы не уходило */
+}
+
+.banner .title h3 {
+    padding-top: 15%;
+}
+
+.banner .title h1 {
+    font-size: 5rem;
+}
+
+.banner .title h4 {
+    font-size: 1.5rem;
+}
+
+.banner .banner-img img {
+    padding: 2px 0;
+    width: 600px;
+    height: 400px;
+    border-radius: 15px;
+}
+
+.btn  {
+    justify-content: space-between;
+}
+
+.card {
+    width: 280px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(135, 206, 250, 0.541);
+    margin-bottom: 10px;
+    transition: .3s ease;
+    
+}
+
+.card:hover {
+    transform: scale(1.015);
+    box-shadow: 0 0 20px rgba(87, 81, 81, 0.479);
+}
+
+   /* Services */
+
+.services .card-row .col-lg-3 {
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Courses */
+
+.courses{
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    
+  }
+
+  .courses-item{
+    flex: 1;
+    align-items: center;
+    padding: 8px;
+  }
+
+  .doctor h1 {
+      text-align: center;
+
+  }
+
+  .doctor h1 img {
+      height: 90px;
+      width: 90px;
+  }
+
+  .doctor .courses img {
+      border-radius: 20px;
+      box-shadow: 10%;
+  }
+
+  /* Courses-media */
+@media(max-width: 576px) {
+    .courses {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media(max-width: 375px){
+    .navbar-collapse li {
+        display: auto;
+    }
+
+    .navbar-collapse .d-flex {
+        width: 100px;
+    }
+    
+    .doctor .courses-item img{
+        flex-direction: column;
+    }
+}
+
+        /* Contact */
+
+.contact h6 {
+    margin-top: 100px;
+    text-align: center;
+    color: hsla(0, 0%, 0%, 1);;
+}
+
+.contact .col-lg-6 .col-md-12 .mes {
+    justify-content: right;
+    align-items: flex-end;
+}
